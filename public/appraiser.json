@@ -1,0 +1,90 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+		"name": "quality",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },
+   {
+		"name": "productivity",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   }, 
+   {
+		"name": "punctuality",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   }, 
+   {
+		"name": "communication",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },  
+   {
+		"name": "contribution",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },  
+   {
+		"name": "public",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },  
+   {
+		"name": "expertise",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },
+   {
+		"name": "administrativs",
+        "dbType": "integer",
+        "htmlType": "radio,Outstanding:5,Commendable:4,Satisfactory:3,Needs-Improvement:2,Unsatisfactory:1"
+   },
+   {
+    "name": "user_id",
+    "dbType": "integer:unsigned:default,0:foreign,users,id",
+    "htmlType": "text",
+    "relation": "mt1,User,user_id,id"
+},
+{
+    "type": "relation",
+    "relation": "1tm,Comment"
+},
+{
+    "name": "users",
+    "type": "relation",
+    "relation": "mtm,Role,user_roles,user_id,role_id"
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]
